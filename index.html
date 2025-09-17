@@ -3,13 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Conversation Support App</title>
+    <title>Otasukeman Apps</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            margin-top: 15px;
+        }
+        .app-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .app-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 <body>
-    <h1>いろいろなAI関連アプリの公開</h1>
-    <p>このアプリケーションは、異なる国の人々の間の会話をAIを使って促進するのに役立ちます。</p>
-    <a href="otasukeman/communication_assistant.html">会話支援AI</a>
-    <a href="otasukeman/syuugou_shashin_maker.html">集合写真メーカー</a>
-    <p>リポジトリをチェック: <a href="https://github.com/hirokunyeah/otasukeman" target="_blank">https://github.com/hirokunyeah/otasukeman</a></p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Otasukeman Apps</h1>
+            <p>Explore our innovative AI-powered tools to enhance your productivity and creativity.</p>
+        </div>
+    </section>
+
+    <!-- App Cards Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Communication Assistant Card -->
+                <div class="col-md-6">
+                    <div class="card app-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Conversation Mediator</h5>
+                            <p class="card-text">Break language barriers with our intelligent conversation mediator. Perfect for multilingual communication.</p>
+                            <a href="apps/communication_asistant.html" class="btn btn-primary">Explore App</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Photo Maker Card -->
+                <div class="col-md-6">
+                    <div class="card app-card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">集合写真メーカー</h5>
+                            <p class="card-text">Create stunning group photos with customizable frames and text. Perfect for events and memories.</p>
+                            <a href="apps/syuugou_shashin_maker.html" class="btn btn-primary">Explore App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Otasukeman. All rights reserved. | <a href="https://github.com/hirokunyeah/otasukeman" target="_blank">GitHub Repository</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
